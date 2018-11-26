@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inverted a string</title>
+    <script src="inverted.js"></script>
+    <script>
+        function invertit() {
+            inverted(document.getElementById("strin").value, function(strout) {
+                document.getElementById("result").innerHTML = strout;
+            });
+            
+        }
+    </script>
+</head>
+<body>
+    <input id="strin" type="text" placeholder="input a sentence">
+    <button id="btn" type="submit" onclick="invertit()">invert it!</button>
+    <p id="result">
+        result here!
+    </p>
+</body>
+</html>
